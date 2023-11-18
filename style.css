@@ -639,6 +639,7 @@ footer .botton li a:hover{
     /* smart phone */
     @media (min-width:0px) and (max-width:480px){
         /*-------------start header------- */
+        header{width:100vw}
         header nav{width:100vw}
         header nav ul li a{font-size: 12px;}
         header #content .container{flex-direction: column;}
