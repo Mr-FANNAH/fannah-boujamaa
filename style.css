@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*
+font-family: 'Mr Dafoe', cursive;
+font-family:'Poppins', sans-serif;
+color: #1f242d;
+color: #01EEFF
+color:#323946
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+
+body{
+    padding-top:60px ;
+    background-color:#323946 ;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+
+.go-up{  
+    color: #01EEFF;
+    font-size: 20px;
+}
+.go-up:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.5);
+}
+/* -------------start header----------- */
+header{
+    width: 100%;
+    height:100vh;
+    background-color:#1f242d
+}
+
+header nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f242d;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+header nav ul{
+    margin-right: 20px;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+header nav ul li a{
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+header nav ul li a:hover{
+    border-bottom:1px solid #01EEFF;
+    color:#01EEFF;
+    filter: blur(0.3px);
+}
+header nav img{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header #content .container{
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+}
+header #content .container .description{
+    padding: 50px ;
+    min-width: 400px;
+}
+header #content .container .description h3{
+    color: white;
+    font-size: 2em;
+    font-family: 'Mr Dafoe', cursive;
+}
+
+header #content .container .description h1{
+    color: white;
+    font-size: 4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+header #content .container .description span{
+    font-size: 20px;
+    color:#01EEFF;
+}
+
+header #content .container .description p{
+    color: white;
+    font-size: 24px;
+    line-height: 1.4 ;
+    margin-top: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header #content .container .description li{
+    width: 40%;
+    display: flex ;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+header #content .container .description li a{
+   font-size: 20px;
+   margin: 4px;
+   transition: all 0.2s ease-in-out;
+}
+header #content .container .description li a:hover{
+    transform: scale(1.9);    
+}
+header #content .container .description .cv{
+    width: 115px;
+    height: 30px;
+    background-color: #01c6d4;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex ;
+    align-items:center;
+    transition: all 0.5s ease-in-out;
+}
+header #content .container .description .cv:hover{
+    background-color: #1f242d;
+    border: 1px solid #01EEFF;
+    border-radius: 20px;
+}
+
+header #content .container .description .cv a{
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 13px ;
+}
+
+header #content .container .photo img{
+    width: 400px;
+    height:400px;
+}
+header #content .container .photo img:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);}
+
+/* ------------end header------------- */
+
+
+
+
+
+
+
+/* ------------start main------------- */
+/* ------------start about me--------- */
+main #about-me{
+    width:100%;
+    height:100vh;
+    background-color:323946 ;
+}
+main #about-me h1 {
+    font-size:30px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 70px;
+}
+main #about-me h1 span {
+    color:#01EEFF ;
+    font-family: 'Mr Dafoe', cursive;
+}
+main #about-me .about-me-patent{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+}
+main #about-me .about-me-patent img{
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+main #about-me .about-me-patent img:hover{
+    transform: scale(1.1);
+}
+main #about-me .about-me-patent .about-me-description{
+    min-width: 300px;
+}
+
+main #about-me .about-me-patent .about-me-description h3 {
+    color: #ffffff;
+    font-size: 20px;
+}
+main #about-me .about-me-patent .about-me-description p {
+    color: #ffffff;
+    font-size: 24px;
+    padding: 0px 20px 10px 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main #about-me .about-me-patent .about-me-description p span {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+main #about-me .about-me-patent .about-me-description .see-more{
+    width: 115px;
+    height: 30px;
+    background-color: #01EEFF;
+    border-radius: 30px;
+    margin-top: 10px;
+    display: flex ;
+    align-items:center;
+    transition: all 0.5s ease-in-out;
+}
+main #about-me .about-me-patent .about-me-description .see-more:hover{
+    background-color: #1f242d;
+    border:2px solid  #01EEFF;
+    border-radius:30px;
+}
+
+main #about-me .about-me-patent .about-me-description .see-more a{
+    color: #ffffff;
+    font-size: 16px;
+    padding-bottom: 3px;
+    margin-left: 25px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* ------------end  about me--------- */
+
+
+
+
+
+
+/* ------------start services--------- */
+main #service{
+    width: 100%;
+    height:100vh;
+    background-color:#1f242d;
+}
+main #service h1{
+    font-size:30px;
+    color: #ffffff;
+    padding-top: 60px;
+    text-align: center;
+    margin-bottom:15px;
+}
+main #service h1 span{
+    color:#01EEFF ;
+    font-family: 'Mr Dafoe', cursive;
+}
+main #service .parent-service{
+    width: 90%;
+    margin-left:5% ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #service .parent-service .bloc1{
+    display: flex;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+main #service .parent-service .blok2{
+    margin-top: 10px;
+    display: flex;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #service .parent-service .s{
+    width: 450px;
+    height: 280px;
+    border-radius: 30px;
+    background-color:#323946;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+main #service .parent-service .s:hover{
+    border: 1px solid #01EEFF;
+}
+main #service .parent-service .s img{
+    width: 60px;
+    height: 60ox;
+}
+main #service .parent-service .s img:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.4);
+}
+main #service .parent-service .s h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px;
+}
+main #service .parent-service .s p{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+main #service .parent-service .s a{
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #61EEFF;
+    border-radius: 30px;
+    padding: 4px 10px;
+}
+main #service .parent-service .s a:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: #323946;
+    border:1px solid #01EEFF;
+}
+/* ------------end services--------- */
+
+
+
+
+
+
+/* ------------start project--------- */
+main #my-project{
+    width: 100%;
+    height:100vh;
+    background-color: #323946;
+    
+}
+main #my-project h1{
+    font-size:30px;
+    color: #ffffff;
+    padding-top: 70px;
+    text-align: center;
+}
+main #my-project h1 span{
+    color:#01EEFF ;
+    font-family: 'Mr Dafoe', cursive;
+}
+ main #my-project .parent-project{
+    width: 90vw;
+    max-width: 1920px;
+    /* border: 2px solid gray; */
+    margin: 30px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
+    
+ }
+ main #my-project .parent-project .panel{
+    background-size:auto 100% ;
+    background-position: center;
+    background-repeat:no-repeat ;
+    height: 70vh;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 70px;
+    color: #FFF;
+    flex: 0.4;
+    margin: 10px;
+    transition: all 0.7s ease-in-out;
+    position: relative;
+    
+ }
+ main #my-project .parent-project .panel:hover{
+    flex: 0.;
+    border-radius: 10px;
+    transform: scale(1.1);
+ }
+ main #my-project .parent-project .panel h3{
+    font-size: 16px;
+    font-family: 'Mr Dafoe', cursive;
+    position: absolute;
+    bottom: 20px;
+    left: 2px;
+    opacity: 10;
+    color: #01EEFF;
+    width: 100px;
+    background-color:#32394657;
+    border-radius: 30px;
+    padding-left: 14px;
+    border:1px solid #01EEFF ;
+ }
+/* ------------end  project--------- */
+/* ------------end main----------- */
+
+
+
+
+
+
+
+
+/* ------------start footer--------- */
+footer{
+    width: 100%;
+    height:93vh;
+    background-color:#1f242d;
+}
+footer h1{
+    font-size:30px;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+footer h1 span{
+    color:#01EEFF ;
+    font-family: 'Mr Dafoe', cursive;
+}
+
+footer .contact-me{
+    height: 77vh;
+    min-width: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+footer .contact-me .map{
+    width: 40vw;
+    height: 500px;
+    margin-right:25px;
+    border-radius: 10px;
+}
+footer .contact-me .map iframe{
+    width: 40vw;
+    max-width: 600px;
+    height: 500px;
+    margin-right:20px;;
+    border-radius: 10px;
+}
+footer .contact-me form input{
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border:1px solid  #20bcff; */
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.356);
+}
+footer .contact-me form:hover{
+    transition: all 2s ease-in-out;
+    background-image: url(Earth.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.1);
+}
+footer .contact-me form input:hover{
+    transition: all 0.1s ease-in-out;
+    background-color:#01eeff62;
+    border:1px solid  #000000;
+
+}
+footer .contact-me form .message input[type="text"]{
+    height: 150px;
+}
+
+footer .contact-me form input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    background-color: #01EEFF;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left:36%;
+    margin-top: 15px;
+}
+footer .contact-me form input[type="submit"]:hover{
+    background-color: #323946;
+    border:1px solid #01EEFF;
+    transition: all 0.2s ease-in-out;
+
+}
+
+footer .botton{
+    height: 6vh;
+    width: 100%;
+    background-color: #323946  ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+footer .botton .copyright p {
+    color: #ffffff;
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer .botton .copyright p i{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+footer .botton li{
+    width: 40%;
+    display: flex ;
+    align-items:center;
+    justify-content: space-between;
+}
+footer .botton li a{
+    font-size: 20px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+
+}
+footer .botton li a:hover{
+    transform: scale(1.4);
+
+}
+/* ------------end footer--------- */
+
+
+
+
+/*-------satrt media queries------- */
+
+    /*--------------ipad------------- */
+
+@media (min-width:320px) and (max-width:786px){
+    /*-------------start header------- */
+    header nav ul li a{line-height: 1; font-size: 15px;}
+    header #content .container{flex-direction: column;}
+    header #content .container .description{max-height: 500px;line-height: 1; font-size: 12px;text-align: center;}
+    header #content .container .discription h3{font-size: 12px;}
+    header #content .container .description h1{ text-align: center;font-size: 30px;padding-top: 10px;padding-bottom: 10px;}
+    header #content .container .description ul{margin-left: 20%;}
+    header #content .container .description .cv{margin-left: 35%;}
+    header #content .container .description p{ font-size: 18px;line-height:1.5;}
+    header #content .container .description li a{font-size: 18px; padding-right: 10px;}
+    header #content .container .photo img{height: 300px;width: 300px;}
+    /*-------------end header------- */
+    /*-------------start main------- */
+
+    /*-------------start about me------- */
+    main #about-me{height:800px;}
+    main #about-me .about-me-patent {flex-direction: column;}
+    main #about-me .about-me-patent .photo-about-me img{height: 320px;width: 320px;margin-top: 20px;}
+    main #about-me .about-me-patent .about-me-description h1{font-size: 26px; text-align: center;}
+    main #about-me .about-me-patent .about-me-description h3{font-size: 18px;text-align: center;}
+    main #about-me .about-me-patent .about-me-description p{font-size: 18px;text-align: center;}
+    main #about-me .about-me-patent .about-me-description .see-more{margin-left: 40%;}
+    /*-------------start about me------- */
+
+
+    /*-------------start my servies------- */
+    main #service h1{font-size:26px;}
+    main #service .parent-service .bloc1,.blok2{flex-direction: column;}
+    main #service .parent-service .bloc1 .s{width: 100%;height: 275px;margin: 10px;}
+    main #service .parent-service .blok2 .s{width: 100%;height: 275px;margin: 10px;}
+    main #service{height:1900px;}
+    /*-------------end my servies------- */
+
+
+
+
+    /*-------------start my project------- */
+    main #my-project h1{font-size:26px;padding-top: 10px;margin-left: 30%;}    
+    main #my-project .parent-project .panel{height: 65vh;border-radius: 50px;flex:0.1;margin: 10px;}
+    main #my-project .parent-project .panel h3{background-color: #01c6d4;color: #FFF;font-size: 10px;bottom: 0px;left: 2px;width: 60px;border-radius: 30px;padding-left: 7px;}
+    main #my-project .parent-project .panel:hover{flex:0.3;}
+    /*-------------end my project------- */
+
+    /*-------------start footer------- */
+    footer h1{font-size: 26px;}
+    footer .contact-me form{min-width: 200px;}
+    footer .contact-me form input[type="submit"]{margin-left:0%;margin-top: 10px; width: 100%; height: 30px;}
+    footer .botton{ padding-left: 5%; padding-right: 5%;}
+    footer .botton .copyright p {font-size: 12px;}
+    footer .botton .copyright p i{padding-left: 5px;font-size: 16px;}
+    footer .botton li{width: 50%;}
+    footer .botton li a{font-size: 20px;margin: 5px;}
+    /*-------------end footer------- */
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:786px) and (max-width:1200px){
+     /*-------------start services------- */
+    main #service{width: 100%;background-color:#1f242d;}
+    main #service h1{font-size:26px;}
+    main #service .parent-service .bloc1,.blok2{flex-direction: column;}
+    main #service .parent-service .bloc1 .s{width: 100%;height: 260px;margin: 10px;}
+    main #service .parent-service .blok2 .s{width: 100%;height: 260px;margin: 10px;}
+    main #service{height:1900px;}}
+    main #my-project .parent-project .panel:hover{flex:2;}
+    /* main #my-project .parent-project .panel:hover{flex:0.6;border-radius: 10px;} */
+    /*-------------end my project------- */
+    /*-------------start about me------- */
+    main #about-me .about-me-patent .about-me-description h1{font-size: 30px;}
+    main #about-me .about-me-patent .about-me-description h3{font-size: 20px;}
+    main #about-me .about-me-patent .about-me-description p{font-size: 20px;}
+    /*-------------start about me------- */
+
+
+
+
+
+
+    /* smart phone */
+    @media (min-width:0px) and (max-width:480px){
+        /*-------------start header------- */
+        header nav ul li a{font-size: 12px;}
+        header #content .container{flex-direction: column;}
+        header #content .container .description{max-height: 500px;line-height: 1.5; font-size: 10px;text-align: center;}
+        header #content .container .discription h3{font-size: 10px;}
+        header #content .container .description h1{ text-align: center;font-size: 30px;padding-top:5px;padding-bottom: 5px;}
+        header #content .container .description ul{margin-left: 20%;}
+        header #content .container .description .cv{margin-left: 30%;}
+        header #content .container .description p{ font-size: 16px;line-height:1.5;}
+        header #content .container .description li a{font-size: 14px; padding-right: 10px;}
+        header #content .container .photo img{height: 200px;width: 200px;}
+    /*-------------end header------- */
+    /*-------------start main------- */
+
+    /*-------------start about me------- */
+        main #about-me{height:1000px;}
+        main #about-me .about-me-patent {flex-direction: column;}
+        main #about-me .about-me-patent .photo-about-me img{height: 280px;width: 280px;margin-top: 10px;}
+        main #about-me .about-me-patent .about-me-description{position:absolute; margin-top: 300px;}
+        main #about-me .about-me-patent .about-me-description h1{font-size: 20px; text-align: center;}
+        main #about-me .about-me-patent .about-me-description h3{font-size: 16px; text-align: center;}
+        main #about-me .about-me-patent .about-me-description p{font-size: 16px;text-align: center;}
+        main #about-me .about-me-patent .about-me-description .see-more{margin-left: 35%;}
+    /*-------------start about me------- */
+
+
+    /*-------------start my servies------- */
+        main #service h1{font-size:20px;}
+        main #service .parent-service .bloc1,.blok2{flex-direction: column;}
+        main #service .parent-service .bloc1 .s{width: 100%;height: 280px;margin: 10px;}
+        main #service .parent-service .blok2 .s{width: 100%;height: 280px;margin: 10px;}
+        main #service{height:1940px;}
+    /*-------------end my servies------- */
+
+
+
+
+    /*-------------start my project------- */
+        main #my-project .container{width: 100vw;}
+        main #my-project h1{font-size:20px; text-align: center; margin-right: 28%;}    
+        main #my-project .parent-project .panel{height: 65vh;border-radius: 50px;flex:0.1;margin: 5px;}
+        main #my-project .parent-project .panel h3{background-color: #01c6d4;color: #FFF;font-size: 10px;bottom: 0px;left: 2px;width: 60px;border-radius: 30px;padding-left: 7px;}
+        main #my-project .parent-project .panel:hover{flex:2;}
+    /*-------------end my project------- */
+
+    /*-------------start footer------- */
+        footer .contact-me{width: 100vw;flex-direction: column;justify-content: center;}
+        footer h1{font-size: 20px;}
+        footer .contact-me .map{height: 200px; width: 80vw; position: absolute; margin-bottom: 400px;margin-right: 24%;}
+        footer .contact-me .map iframe{height: 100px; width: 100%;}
+        footer .contact-me form{height: 300px; width:300px;margin-right: 100px;}
+        footer .contact-me form input[type="submit"]{margin-left:35%;margin-top: 10px;margin-bottom: 24px; width: 30%; height: 25px;}
+        footer .botton{ padding-left: 5%; padding-right: 5%;}
+        footer .botton .copyright p {font-size: 10px;}
+        footer .botton .copyright p i{padding-left: 5px;font-size: 14px;}
+        footer .botton li{width: 40%;}
+        footer .botton li a{font-size: 20px;margin: 3px;}
+    /*-------------end footer------- */
+
+
+
+    }
+
+
+    
