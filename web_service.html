@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web service géospatial</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Poppins', sans-serif;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;}
+            h1{
+                font-size: 40px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                color:rgb(255, 255, 255);
+            }
+        section{
+            width: 100%;
+            height: 100vh;
+            background-image: url(images/Earth.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-color:rgba(0, 128, 0, 0.562);
+            padding: 5% 10% 0% 10%;
+        }
+        .block1,.block2{
+            align-items: center;
+            align-content: center;
+            display: flex;
+            justify-content: space-between ;
+            margin-top: 40px;
+        }
+        section img{
+            height: 200px;
+            width: 400px;
+            border-radius: 20px;
+        }
+        article{
+            border-radius: 20px;
+            height: 250px;
+            background-color:antiquewhite;
+            margin: 5px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+        section article:hover{
+            transition: all 0.5s;
+            transform: scale(1.1);
+            border: 2px solid rgb(42, 95, 165);
+        }
+        a{
+            color: rgb(42, 95, 165);
+            font-size: 26px;
+            justify-content: center;
+            justify-items: center;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <li><a href="index.html"><== Back</a></li>
+        <h1>Bienvenue sur l'application web service géospatial !</h1>
+        <div class="block2">
+            <article>
+                <div class="image"><img src="web_service/rabat.jpg" alt=""></div>
+                <a href="http://localhost:5000/geocode?address=casablanca">Casablanca</a>
+            </article>
+            <article>
+                <div class="image"><img src="web_service/Agadir.jpg" alt=""></div>
+                <a href="http://localhost:5000/geocode?address=Marakech">Marakech</a>
+            </article>
+            <article>
+                <div class="image"><img src="web_service/casablanca.jpg" alt=""></div>
+                <a href="http://localhost:5000/geocode?address=tanger">Tanger</a>
+            </article>
+        </div>
+       <div class="block1">
+        <article>
+            <div class="image"><img src="web_service/marakech.jpg" alt=""></div>
+            <a href="http://localhost:5000/geocode?address=rabat">Rabat</a>
+        </article>
+        <article>
+            <div class="image"><img src="web_service/tanger.jpg" alt=""></div>
+            <a href="http://localhost:5000/geocode?address=agadir">Agadir</a>
+        </article>
+        <article>
+            <div class="image"><img src="web_service/meknes.jpg" alt=""></div>
+            <a href="http://localhost:5000/geocode?address=meknes">Meknes</a>
+        </article>
+       </div>
+    </section>
+</body>
+</html>
