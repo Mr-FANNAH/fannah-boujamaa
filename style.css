@@ -409,6 +409,12 @@ main #my-project h1 span{
     padding-left: 14px;
     border:1px solid #01EEFF ;
  }
+ main #my-project .parent-project .panel h3 a{
+    color:#01EEFF;
+    font-size: 14px;
+    line-height: 0.5;
+
+}
 /* ------------end  project--------- */
 /* ------------end main----------- */
 
@@ -638,9 +644,7 @@ footer .botton li a:hover{
 
     /* smart phone */
     @media (min-width:0px) and (max-width:480px){
-        body{width:100vw}
         /*-------------start header------- */
-        header{width:100vw}
         header nav{width:100vw}
         header nav ul li a{font-size: 12px;}
         header #content .container{flex-direction: column;}
