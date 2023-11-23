@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins',sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image: url(webdev.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 0 8%;
+        }
+        .content{
+            top: 50%;
+            position:absolute;
+            transform: translateY(-50%);
+            color: #fff;
+        }
+        .content p{ font-size: 20px; font-family:'poppins',sans-serif;}
+        .content h1{font-size: 64px;font-weight: 600;}
+        .content button{
+            background:transparent;
+            border: 2px solid #fff;
+            padding: 12px 25px;
+            color: #fff;
+            margin-top: 10px;
+            border-top-right-radius: 30px ;
+            border-bottom-left-radius: 30px;
+
+        }
+        .content button:hover{
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.1);
+            background-color:#e28124;
+        }
+        .content button a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .launchtime{
+            display: flex;
+        }
+        .launchtime div{flex-basis: 100px;text-align: center;}
+        .launchtime div p{font-size: 60px; margin-bottom:-14px ;}
+        .launchtime p{padding-bottom: 5px;}
+        
+    </style>
+    <script>
+        var countDownDate = new Date("nov 24, 2023 20:00:00").getTime();
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+           
+           document.getElementById("days").innerHTML = days;
+           document.getElementById("hours").innerHTML = hours;
+           document.getElementById("minutes").innerHTML = minutes;
+           document.getElementById("seconds").innerHTML = seconds;
+        }, 1000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <p>Formation HTML et CSS en ligne<br>
+                html css application a zero<br>
+Vendredi, 24 novembre · 8:00 à 9:00pm<br>
+Fuseau horaire : Africa/Casablanca<br>
+Informations de connexion Google Meet
+            </p>
+            <h1>Rejoignez-nous sur Meet</h1>
+            <button type="button"><a href="https://meet.google.com/zwk-djjw-sqh">Participer avec Google Meet</a></button>
+            <div class="launchtime">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
