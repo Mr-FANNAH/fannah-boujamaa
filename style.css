@@ -674,9 +674,9 @@ footer .botton li a:hover{
     /*-------------start my servies------- */
         main #service h1{font-size:20px;}
         main #service .parent-service .bloc1,.blok2{flex-direction: column;}
-        main #service .parent-service .bloc1 .s{width: 100%;height: 280px;margin: 10px;}
-        main #service .parent-service .blok2 .s{width: 100%;height: 280px;margin: 10px;}
-        main #service{height:1940px;}
+        main #service .parent-service .bloc1 .s{width: 100%;height: 290px;margin: 12px;}
+        main #service .parent-service .blok2 .s{width: 100%;height: 290px;margin: 12px;}
+        main #service{height:1960px;}
     /*-------------end my servies------- */
 
 
